@@ -1,0 +1,38 @@
+1. 10 statistiques
+
+nombre total de commandes
+chiffre d'affaires total (Sales)
+profit total
+vente moyenne
+profit moyen
+quantité totale vendue
+remise moyenne
+vente maximale
+profit maximal
+nombre de commandes à perte
+
+2. 5 graphiques
+
+évolution des ventes par mois
+ventes par catégorie
+profit par région
+top 10 produits par ventes
+relation Discount ↔ Profit
+
+3. 5 anomalies
+Par exemple :
+
+ventes exceptionnellement élevées
+profits extrêmement négatifs
+remises très élevées
+commandes avec quantité inhabituelle
+produits avec ventes élevées mais profit négatif
+
+4. 5 hypothèses métier
+Par exemple :
+
+Les remises élevées pourraient être associées à une baisse du profit.
+Certaines catégories pourraient générer beaucoup de ventes mais relativement peu de profit.
+Certaines régions pourraient être plus rentables que d'autres.
+Certains produits pourraient avoir beaucoup de ventes mais une faible rentabilité.
+Les commandes avec livraison plus longue pourraient avoir des caractéristiques différentes des autres commandes.
