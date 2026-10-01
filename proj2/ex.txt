@@ -1,0 +1,303 @@
+🎯 Projet : Customer Churn Prediction
+
+Ma t9oulch l'algorithme directement. Emchi étape par étape.
+
+Partie 1 — Compréhension du dataset
+Importer les librairies nécessaires.
+Charger le CSV.
+Afficher les 5 premières lignes.
+Afficher les 5 dernières lignes.
+Afficher le nombre de lignes et colonnes.
+Afficher info().
+Afficher describe().
+Identifier les variables numériques.
+Identifier les variables catégorielles.
+Identifier la variable cible Churn.
+Compter les modalités de chaque variable catégorielle.
+Vérifier les valeurs manquantes.
+Vérifier les doublons.
+Partie 2 — Analyse exploratoire
+Calculer le nombre de Churn = Yes et No.
+Calculer le pourcentage de chaque classe.
+Analyser la distribution de tenure.
+Analyser MonthlyCharges.
+Analyser TotalCharges.
+Comparer MonthlyCharges entre Churn Yes/No.
+Comparer tenure entre Churn Yes/No.
+Étudier la relation entre Contract et Churn.
+Étudier InternetService et Churn.
+Étudier PaymentMethod et Churn.
+Faire quelques visualisations pertinentes.
+🧹 Partie 3 — Data preprocessing
+Supprimer les colonnes inutiles.
+Transformer TotalCharges en numérique.
+Traiter les valeurs manquantes.
+Transformer Churn en 0/1.
+Séparer :
+X = features
+y = target
+Faire un train_test_split.
+
+👉 Ici, réfléchis à cette question :
+
+Pourquoi on ne doit pas entraîner le modèle sur tout le dataset avant de faire le test ?
+
+🔢 Partie 4 — Encoding
+Identifier les colonnes numériques et catégorielles.
+Encoder les variables catégorielles avec :
+OneHotEncoder
+Standardiser les variables numériques avec :
+StandardScaler
+Utiliser :
+ColumnTransformer
+Construire un :
+Pipeline
+
+Question importante :
+
+Pourquoi utiliser Pipeline + ColumnTransformer au lieu de transformer manuellement tout le dataset ?
+
+🤖 Partie 5 — Logistic Regression
+
+Commence par :
+
+LogisticRegression
+Entraîner le modèle.
+Faire des prédictions.
+Calculer :
+Accuracy
+Precision
+Recall
+F1-score
+Confusion matrix
+Afficher le classification_report.
+Répondre :
+
+Est-ce que l'accuracy seule suffit pour juger ce modèle ? Pourquoi ?
+
+🌳 Partie 6 — Decision Tree
+
+Entraîner :
+
+DecisionTreeClassifier
+Tester plusieurs valeurs de :
+max_depth
+min_samples_split
+min_samples_leaf
+Comparer les performances avec Logistic Regression.
+Observer si le modèle fait de l'overfitting.
+
+Question :
+
+Comment tu sais qu'un Decision Tree overfit ?
+
+🌲 Partie 7 — Random Forest
+
+Utiliser :
+
+RandomForestClassifier
+Entraîner le modèle.
+Tester plusieurs :
+n_estimators
+max_depth
+min_samples_split
+Calculer les mêmes métriques.
+Comparer :
+Logistic Regression
+Decision Tree
+Random Forest
+⚙️ Partie 8 — KNN
+
+Utiliser :
+
+KNeighborsClassifier
+Tester plusieurs valeurs de k.
+
+Par exemple :
+
+k = 3
+5
+7
+9
+11
+15
+Trouver le meilleur k.
+Expliquer pourquoi StandardScaler est particulièrement important pour KNN.
+📈 Partie 9 — SVM
+
+Utiliser :
+
+SVC
+Tester :
+kernel = linear
+kernel = rbf
+Tester différentes valeurs de :
+C
+gamma
+Comparer avec les modèles précédents.
+🧠 Partie 10 — Hyperparameter tuning
+
+Maintenant utilise :
+
+GridSearchCV
+
+pour :
+
+Logistic Regression
+
+chercher les meilleurs paramètres.
+
+Decision Tree
+
+chercher :
+
+max_depth
+min_samples_split
+min_samples_leaf
+Random Forest
+
+chercher :
+
+n_estimators
+max_depth
+min_samples_split
+KNN
+
+chercher :
+
+n_neighbors
+weights
+SVM
+
+chercher :
+
+C
+gamma
+kernel
+🏆 Partie 11 — Comparaison finale
+
+Créer un tableau :
+
+Model	Accuracy	Precision	Recall	F1
+Logistic Regression				
+Decision Tree				
+Random Forest				
+KNN				
+SVM				
+
+Puis réponds :
+
+Quelle métrique est la plus importante dans ce problème ?
+Pourquoi ?
+Quel modèle détecte le mieux les clients qui vont partir ?
+Quel modèle produit le plus de faux positifs ?
+Quel modèle produit le plus de faux négatifs ?
+
+Attention: ne choisis pas simplement le modèle avec la meilleure accuracy.
+
+🔥 Partie 12 — Cross-validation
+
+Utiliser :
+
+cross_val_score
+
+Puis :
+
+StratifiedKFold
+
+Questions :
+
+Pourquoi utiliser Cross-Validation ?
+Quelle différence entre train/test split et cross-validation ?
+Est-ce que ton résultat reste stable entre les différents folds ?
+⚠️ Partie 13 — Overfitting / Underfitting
+
+Pour au moins 2 modèles :
+
+Comparer :
+
+Training score
+Validation score
+Test score
+
+Puis déterminer :
+
+underfitting
+good fit
+overfitting
+📊 Partie 14 — Confusion Matrix
+
+Pour le modèle final :
+
+Afficher :
+
+Confusion Matrix
+
+et expliquer précisément :
+
+True Positive
+True Negative
+False Positive
+False Negative
+
+Puis répondre :
+
+Dans ce problème, pourquoi un False Negative peut être particulièrement intéressant pour l'entreprise ?
+
+🎯 Partie 15 — Feature Importance
+
+Avec Random Forest :
+
+feature_importances_
+
+Identifier les variables les plus importantes.
+
+Question :
+
+Quelles caractéristiques semblent les plus liées au churn ?
+
+⚠️ Ici tu dois distinguer corrélation/importance prédictive et causalité.
+
+🚀 Partie 16 — Projet final
+
+À la fin, ton notebook doit suivre cette structure :
+
+1. Import libraries
+
+2. Load dataset
+
+3. Data understanding
+
+4. Exploratory Data Analysis
+
+5. Data cleaning
+
+6. Feature engineering
+
+7. Train/Test Split
+
+8. Preprocessing
+
+9. Logistic Regression
+
+10. Decision Tree
+
+11. Random Forest
+
+12. KNN
+
+13. SVM
+
+14. Cross-validation
+
+15. Hyperparameter tuning
+
+16. Model comparison
+
+17. Final model
+
+18. Confusion Matrix
+
+19. Feature importance
+
+20. Business interpretation
