@@ -1,0 +1,70 @@
+Project 1 — House Price Prediction
+
+Type: Regression
+
+1. Understanding the Dataset
+What is the objective of this project?
+What is the target variable?
+What are the input features?
+How many rows and columns does the dataset contain?
+What does each feature represent?
+Which features are numerical?
+Which features are categorical?
+What is the data type of each column?
+Are there any missing values?
+Are there any duplicated rows?
+2. Exploratory Data Analysis
+What is the distribution of house prices?
+What is the average house price?
+What is the minimum and maximum house price?
+Which features are most correlated with the house price?
+How does house area affect house price?
+Does the number of bedrooms affect the price?
+Does the number of bathrooms affect the price?
+Does having air conditioning affect the price?
+Does having a basement affect the price?
+Are there any outliers?
+3. Data Preprocessing
+How should categorical variables be encoded?
+Do we need to scale the numerical features?
+How should missing values be handled?
+How should duplicated observations be handled?
+Should we remove or keep outliers?
+How should we split the dataset into training and testing sets?
+4. Model Building
+How can we build a Linear Regression model?
+How can we build a Polynomial Regression model?
+How can we build a K-Nearest Neighbors Regression model?
+How can we build a Decision Tree Regression model?
+How can we build a Random Forest Regression model?
+How can we build a Gradient Boosting Regression model?
+5. Model Evaluation
+What is Mean Absolute Error (MAE)?
+What is Mean Squared Error (MSE)?
+What is Root Mean Squared Error (RMSE)?
+What is the coefficient of determination (R²)?
+Which metric is the most appropriate for this problem?
+Which model has the lowest RMSE?
+Which model has the lowest MAE?
+Which model has the highest R²?
+Which model performs best overall?
+6. Overfitting & Underfitting
+Is the model overfitting?
+Is the model underfitting?
+How can we detect overfitting?
+How can we reduce overfitting?
+What is the difference between training performance and testing performance?
+7. Hyperparameter Tuning
+Which hyperparameters can be tuned for a Decision Tree?
+Which hyperparameters can be tuned for Random Forest?
+Which hyperparameters can be tuned for KNN?
+How can GridSearchCV be used?
+How can RandomizedSearchCV be used?
+Does hyperparameter tuning improve the model?
+8. Final Analysis
+Which features have the greatest impact on house prices?
+Which model should be selected for deployment?
+Why is the selected model better than the others?
+What are the limitations of the model?
+How could this project be improved?
+How would you use the model to predict the price of a new house?
