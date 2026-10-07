@@ -1,0 +1,28 @@
+1.Understanding the Dataset
+What is the objective of this classification project?
+What is the target variable?
+What are the input features?
+How many rows and columns does the dataset contain?
+What does each feature represent?
+Which columns are numerical?
+Which columns are categorical?
+Are there any missing values?
+2. Data Preparation
+Select the features needed for classification.
+Handle the missing values.
+Convert categorical features into numerical values.
+Split the dataset into training and testing sets.
+3. Classification Models
+Train a Logistic Regression classification model.
+Train a K-Nearest Neighbors (KNN) classification model.
+Train a Decision Tree classification model.
+Train a Random Forest classification model.
+Train a Gradient Boosting classification model.
+4. Model Evaluation
+Calculate the Accuracy of each model.
+Calculate the Precision of each model.
+Calculate the Recall of each model.
+Calculate the F1-Score of each model.
+Display the Confusion Matrix for each model.
+Compare all models.
+Which classification model gives the best results?
