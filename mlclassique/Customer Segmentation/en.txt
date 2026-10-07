@@ -1,0 +1,31 @@
+Questions
+1. Understanding the Dataset
+What is the objective of this project?
+What does each column represent?
+How many rows and columns are there?
+What are the numerical features?
+Are there any missing values?
+Are there any duplicated rows?
+Display the basic statistical summary.
+2. Data Preparation
+Select the features that will be used for clustering.
+Remove CustomerID from the features.
+Standardize the numerical features using StandardScaler.
+3. K-Means Clustering
+What is K-Means Clustering?
+Train a K-Means model with k = 2.
+Train models with different values of k from 2 to 10.
+Calculate the inertia for each value of k.
+Plot the Elbow Curve.
+Determine the optimal number of clusters using the Elbow Method.
+Train the final K-Means model using the selected k.
+Add the cluster labels to the original dataset.
+4. Visualization
+Visualize the clusters using a scatter plot.
+Plot Annual_Income vs Spending_Score.
+Color the points according to their cluster.
+Identify the characteristics of each cluster.
+5. Evaluation
+What is the Silhouette Score?
+Calculate the Silhouette Score of your final model.
+Is the clustering good based on the Silhouette Score?
