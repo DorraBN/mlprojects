@@ -1,0 +1,33 @@
+Exercise 1 — Email Spam Classification
+
+Objective: Build a machine learning model that predicts whether an email is Spam or Not Spam.
+
+1. Understanding the Dataset
+What is the objective of this project?
+What does each column represent?
+What is the target variable?
+How many rows and columns are there?
+Which features are numerical?
+Are there any missing values?
+Are there any duplicated rows?
+Display the basic statistical summary.
+2. Data Preparation
+Separate the features X from the target y.
+Which column should be used as the target?
+Split the dataset into training and testing sets using train_test_split.
+Use 80% for training and 20% for testing.
+3. Naive Bayes Classification
+What is Naive Bayes?
+Train a Gaussian Naive Bayes classification model.
+Make predictions on the test set.
+4. Evaluation
+Calculate the Accuracy.
+Calculate the Precision.
+Calculate the Recall.
+Calculate the F1-score.
+Display the Confusion Matrix.
+Display the Classification Report.
+5. Interpretation
+Is the model performing well?
+Which type of error is more problematic for spam detection: False Positive or False Negative?
+Based on the evaluation metrics, would you use this model for spam detection?

@@ -1,0 +1,33 @@
+Questions
+1. Understanding the Dataset
+What is the objective of this project?
+What does each column represent?
+How many rows and columns are there?
+What are the numerical features?
+Are there any missing values?
+Are there any duplicated rows?
+Display the basic statistical summary.
+2. Data Preparation
+Remove CustomerID.
+Select the features that will be used for clustering.
+Standardize the features using StandardScaler.
+3. Hierarchical Clustering
+What is Hierarchical Clustering?
+What is the difference between Agglomerative and Divisive Hierarchical Clustering?
+Create an Agglomerative Clustering model.
+Use n_clusters = 5.
+Train the model.
+Add the cluster labels to the original dataset.
+4. Dendrogram
+What is a Dendrogram?
+Create a dendrogram using scipy.cluster.hierarchy.
+What does the vertical axis of the dendrogram represent?
+How can a dendrogram help determine the number of clusters?
+5. Visualization
+Create a scatter plot of:
+Annual_Income vs Spending_Score
+Color the points according to their cluster.
+Describe the characteristics of each cluster.
+6. Evaluation
+Calculate the Silhouette Score.
+Is the clustering good based on the Silhouette Score?
