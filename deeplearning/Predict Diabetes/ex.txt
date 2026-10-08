@@ -1,0 +1,25 @@
+Questions
+Load the dataset using Pandas.
+Display the first 5 rows.
+Check the dataset shape and information.
+Check for missing values.
+Separate the features X from the target y.
+Split the data into training and testing sets.
+Scale the numerical features.
+Build a Neural Network using Keras.
+Train the model.
+Evaluate the model using accuracy.
+Make predictions on the test set.
+Predict the result for a new patient:
+Pregnancies = 2
+Glucose = 125
+BloodPressure = 70
+SkinThickness = 30
+Insulin = 110
+BMI = 32
+Age = 30
+Display whether the prediction is:
+0 → No Diabetes
+1 → Diabetes
+
+C:\Users\dorra\anaconda3\python.exe app.py
