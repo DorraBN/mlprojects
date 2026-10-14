@@ -1,0 +1,39 @@
+Part 1 — Load and explore the dataset
+1. Import the required libraries.
+2. Load dataset.csv using pandas.
+3. Display the first five rows and the dataset shape.
+4. Check for missing values and duplicated rows.
+5. Display the frequency of each category.
+Part 2 — Text preprocessing
+6. Convert all texts to lowercase.
+7. Remove punctuation from the texts.
+8. Create a tokens column by splitting each text into words.
+9. Count the number of words in each text.
+10. Encode the target categories using LabelEncoder.
+Part 3 — Prepare the data
+11. Separate the input texts X from the target labels y.
+12. Split the dataset into training and testing sets.
+13. Create a Tokenizer with an out-of-vocabulary token.
+14. Fit the tokenizer on the training texts.
+15. Convert training and testing texts into sequences of integers.
+16. Apply padding to make all sequences the same length.
+17. Calculate the vocabulary size.
+Part 4 — Build the LSTM model
+18. Create a Sequential model.
+19. Add an Embedding layer with an output dimension of 16.
+20. Add an LSTM layer with 32 units.
+21. Add a Dense output layer with 3 neurons and a softmax activation function.
+22. Compile the model using the Adam optimizer, categorical cross-entropy loss, and accuracy as a metric.
+23. Display the model summary.
+Part 5 — Train and evaluate the model
+24. Train the model using 30 epochs and a batch size of 4.
+25. Evaluate the model on the test dataset.
+26. Display the test loss and accuracy.
+27. Generate predictions for the test data.
+28. Convert the predicted numerical labels back to category names.
+Part 6 — Predict a new text
+29. Create a new text: "The football team won the championship".
+30. Apply the same preprocessing steps used during training.
+31. Convert the text into a sequence and apply padding.
+32. Predict its category using the trained model.
+33. Display the predicted category.

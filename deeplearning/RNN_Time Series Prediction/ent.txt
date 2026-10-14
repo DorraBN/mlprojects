@@ -1,0 +1,35 @@
+Exercise: Sales Forecasting using RNN
+
+Load the dataset using Pandas.
+
+Display the first five rows of the dataset.
+
+Check for missing values and duplicated rows.
+
+Display the basic statistical information about the dataset.
+
+Extract the Sales column.
+
+Normalize the sales values using MinMaxScaler.
+
+Create sequences using the previous 5 days to predict the next day's sales.
+
+Convert the sequences into NumPy arrays.
+
+Reshape the input data into the format required by an RNN.
+
+Split the data into training and testing sets, keeping the chronological order.
+
+Build a Sequential model using a SimpleRNN layer and a Dense output layer.
+
+Compile the model using the Adam optimizer and Mean Squared Error loss.
+
+Train the model for 50 epochs.
+
+Evaluate the model on the test data.
+
+Plot the training loss over the epochs.
+
+Predict the sales for the next day.
+
+Convert the predicted value back to the original sales scale.

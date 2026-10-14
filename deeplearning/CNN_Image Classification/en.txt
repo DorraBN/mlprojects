@@ -1,0 +1,53 @@
+CNN Image Classification — Exercise
+
+Objective: Build a Convolutional Neural Network using TensorFlow/Keras to classify Fashion-MNIST images.
+
+Questions
+Load the training and testing datasets using Pandas.
+Display the first 5 rows of the training dataset.
+Display the shape of both datasets.
+Check for missing values.
+Check for duplicated rows.
+Separate the target variable label from the pixel features.
+Convert the pixel values from Pandas DataFrames to NumPy arrays.
+Reshape the pixel data from:784 → 28 × 28 × 1
+Normalize the pixel values from [0, 255] to [0, 1].
+Display some sample images using Matplotlib.
+Display the corresponding labels of the sample images.
+Build a CNN using Keras containing:
+Conv2D
+MaxPooling2D
+Flatten
+Dense
+Dropout
+Use ReLU as the activation function for the hidden layers.
+Use Softmax in the output layer.
+Compile the model using:
+an appropriate optimizer
+sparse_categorical_crossentropy
+accuracy
+Display the model architecture using model.summary().
+Train the CNN model on the training dataset.
+Evaluate the model on the test dataset.
+Display the test accuracy.
+Make predictions for the test images.
+Convert the predicted probabilities into predicted classes.
+Compare the predicted labels with the real labels.
+Display several test images with:
+the image
+the real label
+the predicted label
+Calculate the confusion matrix.
+Identify which classes are the easiest and hardest for the CNN to classify.
+Try to improve the model by changing:
+number of filters
+kernel size
+number of CNN layers
+dropout rate
+number of epochs
+🎯 Bonus
+Create a function:
+
+predict_image(image)
+
+that receives one 28 × 28 image and returns its predicted Fashion-MNIST class.

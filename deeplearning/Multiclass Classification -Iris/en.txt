@@ -1,0 +1,18 @@
+1. Load the dataset using Pandas.
+2. Display the first 5 rows and the dataset shape.
+3. Check for missing values and duplicated rows.
+4. Separate the input features X from the target y.
+5. Encode the target labels into numerical values.
+6. Split the dataset into training and testing sets (80% training, 20% testing). Use random_state=42 and stratify=y.
+7. Normalize the input features using StandardScaler.
+8. Build a Neural Network using Keras Sequential.
+9. Add an input layer and a hidden Dense layer with 16 neurons and ReLU activation.
+10. Add another hidden Dense layer with 8 neurons and ReLU activation.
+11. Add an output layer with 3 neurons and softmax activation.
+12. Compile the model using the Adam optimizer, sparse categorical crossentropy loss, and accuracy metric.
+13. Train the model for 50 epochs with a batch size of 8.
+14. Evaluate the model on the test set.
+15. Display the training and validation accuracy and loss curves.
+16. Predict the class of each sample in the test set.
+17. Calculate the test accuracy and display a confusion matrix.
+18. Predict the species of a new flower with sepal length=5.1, sepal width=3.5, petal length=1.4, and petal width=0.2.

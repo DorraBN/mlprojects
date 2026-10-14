@@ -1,0 +1,55 @@
+Part 1 — Data Exploration
+Load the dataset using Pandas.
+Display the first five rows.
+Display the dataset shape and information.
+Check for missing values.
+Check for duplicate rows.
+Display descriptive statistics.
+Identify the numerical features and the target column.
+
+Remove the HouseID column because it is only an identifier.
+
+Part 2 — Data Preprocessing
+
+Separate the input features X from the target variable y.
+
+Split the dataset into training and testing sets using an 80/20 ratio.
+
+Set random_state=42 for reproducibility.
+
+Standardize the input features using StandardScaler.
+
+Fit the scaler on the training data and transform both datasets.
+Part 3 — Build the Neural Network
+
+Import Sequential from TensorFlow Keras.
+
+Import the Dense layer.
+
+Create a neural network with two hidden layers containing 64 and 32 neurons.
+Use the ReLU activation function in the hidden layers.
+Add an output layer with one neuron.
+Compile the model using the Adam optimizer and Mean Squared Error (MSE) loss.
+Train the model for 100 epochs with a batch size of 8.
+Use 20% of the training data for validation.
+Part 4 — Evaluate the Model
+Evaluate the model on the test set.
+Calculate the Mean Absolute Error (MAE).
+Calculate the Mean Squared Error (MSE).
+Calculate the Root Mean Squared Error (RMSE).
+
+Calculate the coefficient of determination (R
+2
+ score).
+
+Plot the training loss and validation loss.
+Compare the actual house prices with the predicted prices.
+Part 5 — Make Predictions
+Predict the prices of houses in the test set.
+
+Create a new house with the following features: Area_sqft = 2000, Bedrooms = 3, Bathrooms = 2, Age_years = 5.
+
+Transform the new house's features using the previously fitted scaler.
+Predict the price of the new house.
+Display the predicted price in a readable format.
+

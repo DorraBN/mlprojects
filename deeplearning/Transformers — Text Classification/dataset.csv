@@ -1,0 +1,27 @@
+```csv
+text,category
+"The football team won the final match",Sports
+"The player scored three goals",Sports
+"The coach trained the team yesterday",Sports
+"The basketball team won the tournament",Sports
+"The tennis player won the championship",Sports
+"The athlete broke a new record",Sports
+"The football club signed a new player",Sports
+"The team lost the match yesterday",Sports
+"Artificial intelligence is changing technology",Technology
+"The company released new software",Technology
+"The smartphone has a powerful processor",Technology
+"Scientists developed a new computer chip",Technology
+"The application received a major update",Technology
+"Robots are used in modern factories",Technology
+"The computer system uses artificial intelligence",Technology
+"The company launched a new technology platform",Technology
+"The government announced a new policy",Politics
+"The president met foreign leaders",Politics
+"The parliament approved a new law",Politics
+"The election campaign started yesterday",Politics
+"The minister discussed national security",Politics
+"The political party won the election",Politics
+"The government introduced economic reforms",Politics
+"The president addressed the parliament",Politics
+```

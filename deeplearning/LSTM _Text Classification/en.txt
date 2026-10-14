@@ -1,0 +1,73 @@
+Part 1 — Load and explore the dataset
+
+Import pandas and NumPy.
+
+Import the required libraries from TensorFlow/Keras.
+
+Load dataset.csv.
+
+Display the first five rows and the dataset shape.
+
+Check for missing values and duplicated rows.
+
+Display the distribution of positive and negative sentiments.
+
+Part 2 — Text preprocessing
+
+Convert all reviews to lowercase.
+
+Remove punctuation from the reviews.
+
+Tokenize the reviews using Tokenizer.
+
+Convert the text into sequences of integers.
+
+Calculate the vocabulary size.
+
+Apply padding using pad_sequences to make all sequences have the same length.
+
+Encode the sentiment labels into numerical values.
+
+Part 3 — Split the dataset
+
+Separate the input features X from the target y.
+
+Split the dataset into training and testing sets using train_test_split.
+
+Part 4 — Build the LSTM model
+
+Create a Sequential model.
+
+Add an Embedding layer.
+
+Add an LSTM layer with 32 units.
+
+Add a Dense output layer with a sigmoid activation function.
+
+Compile the model using the Adam optimizer and binary cross-entropy loss.
+
+Display the model summary.
+
+Part 5 — Train and evaluate
+
+Train the model using model.fit().
+
+Use 10 epochs and a suitable batch size.
+
+Evaluate the model on the test dataset.
+
+Display the test loss and accuracy.
+
+Part 6 — Predict a new review
+
+Create a new review: "This product is absolutely amazing".
+
+Apply the same text preprocessing used during training.
+
+Convert the review into a sequence of integers.
+
+Apply padding.
+
+Use the trained model to predict the sentiment.
+
+Display the predicted sentiment as Positive or Negative.

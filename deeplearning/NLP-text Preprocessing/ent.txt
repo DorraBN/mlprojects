@@ -1,0 +1,12 @@
+1. Import pandas and load dataset.csv.
+2. Display the first five rows and check the dataset shape.
+3. Check for missing values and duplicated rows.
+4. Convert all reviews to lowercase.
+5. Remove punctuation from the reviews.
+6. Tokenize each review into individual words.
+7. Remove common English stop words such as 'the', 'is', and 'a'.
+8. Display the cleaned reviews next to the original reviews.
+9. Count the number of words in each cleaned review.
+10. Find the 10 most frequent words in all reviews.
+11. Calculate the frequency of positive and negative sentiments.
+12. Create a new review: 'THE PRODUCT IS AMAZING!!!' and apply all preprocessing steps to it.
