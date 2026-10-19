@@ -1,0 +1,10 @@
+Read the documents from documents.txt.
+[ ] 2. Split the text into smaller chunks.
+[ ] 3. Create embeddings for each chunk using Sentence Transformers.
+[ ] 4. Store the embeddings in a FAISS index.
+[ ] 5. Write a function that converts a user question into an embedding.
+[ ] 6. Retrieve the 2 most relevant chunks for a given question.
+[ ] 7. Display the retrieved chunks.
+[ ] 8. Use a text generation model to generate an answer based on the retrieved context.
+[ ] 9. Test the system with at least 3 different questions.
+[ ] 10. Compare the generated answer with the original document to evaluate its accuracy.

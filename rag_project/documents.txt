@@ -1,0 +1,11 @@
+Python is a programming language created by Guido van Rossum. It is widely used for data analysis, artificial intelligence, and web development.
+
+Machine Learning is a branch of artificial intelligence. It allows computers to learn patterns from data and make predictions.
+
+Deep Learning is a subset of Machine Learning. It uses neural networks with multiple layers to learn complex patterns.
+
+Natural Language Processing (NLP) helps computers understand, process, and generate human language.
+
+RAG stands for Retrieval-Augmented Generation. It combines document retrieval with text generation to answer questions using relevant information.
+
+Vector databases store numerical representations of data called embeddings. They help retrieve documents that are semantically similar to a question.

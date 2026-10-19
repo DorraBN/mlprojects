@@ -1,0 +1,186 @@
+End-to-End Machine Learning Project — Telco Customer Churn
+Part 1 — Data Loading and Preprocessing
+1. Import Pandas, NumPy, Matplotlib, and Seaborn.
+2. Load dataset.csv into a DataFrame.
+3. Display the first five rows.
+4. Display the dataset's shape, column names, and data types.
+5. Display descriptive statistics for numerical columns.
+6. Check for missing values in each column.
+7. Check for duplicated rows.
+8. Remove duplicated rows.
+9. Handle missing numerical values.
+10. Handle missing categorical values.
+11. Identify and handle outliers in numerical features.
+12. Remove the customerID column.
+13. Separate numerical and categorical features.
+14. Encode categorical features using OneHotEncoder.
+15. Encode the target variable Churn using LabelEncoder.
+16. Split the dataset into training and testing sets.
+17. Apply StandardScaler to numerical features.
+18. Explain why preprocessing must be fitted on the training data only.
+Part 2 — Exploratory Data Analysis (EDA)
+1. Display the distribution of each numerical feature.
+2. Plot histograms and boxplots for SeniorCitizen, tenure, MonthlyCharges, and TotalCharges.
+3. Analyze the distribution of the target variable Churn.
+4. Create a correlation matrix for numerical features.
+5. Visualize correlations using a heatmap.
+6. Analyze the relationship between tenure and TotalCharges.
+7. Analyze the relationship between MonthlyCharges and TotalCharges.
+8. Compare churn rates across gender, Partner, and Dependents.
+9. Analyze churn rates according to InternetService, OnlineSecurity, and TechSupport.
+10. Compare churn rates across Contract and PaymentMethod.
+11. Investigate the relationship between tenure and Churn.
+12. Identify class imbalance in the target variable.
+13. Write a short report summarizing the main findings.
+Part 3 — Classical Machine Learning
+Exercise 1: Linear Regression
+Objective: Predict TotalCharges.
+1. Select appropriate features, such as tenure and MonthlyCharges.
+2. Select TotalCharges as the target variable.
+3. Split the data into training and testing sets.
+4. Train a LinearRegression model.
+5. Predict total charges on the test set.
+6. Calculate MAE, MSE, RMSE, and \(R^2\).
+7. Plot actual values against predicted values.
+8. Interpret the model's performance.
+Exercise 2: Polynomial Regression
+1. Create polynomial features using PolynomialFeatures.
+2. Train a polynomial regression model to predict TotalCharges.
+3. Test different polynomial degrees.
+4. Compare the results with Linear Regression.
+5. Identify possible signs of overfitting.
+6. Select an appropriate polynomial degree.
+Exercise 3: Decision Tree Regression
+1. Train a DecisionTreeRegressor.
+2. Experiment with different values of max_depth.
+3. Evaluate the model using MAE, RMSE, and \(R^2\).
+4. Compare training and testing performance.
+5. Explain how tree depth affects overfitting.
+Exercise 4: Random Forest Regression
+1. Train a RandomForestRegressor.
+2. Experiment with n_estimators and max_depth.
+3. Evaluate the model on the test set.
+4. Compare its performance with Linea5. Display and interpret feature importance.
+r Regression and Decision Tree Regression.
+Exercise 5: Logistic Regression
+Objective: Predict whether a customer will leave the company.
+1. Select Churn as the target variable.
+2. Encode the target variable if necessary.
+3. Train a LogisticRegression model.
+4. Predict churn class labels.
+5. Predict churn probabilities.
+6. Calculate accuracy, precision, recall, and F1-score.
+7. Display the confusion matrix.
+8. Explain the difference between classification and regression.
+Exercise 6: K-Nearest Neighbors (KNN)
+1. Standardize the numerical features.
+2. Train a KNeighborsClassifier.
+3. Test several values of n_neighbors.
+4. Evaluate each model using classification metrics.
+5. Plot model performance against the number of neighbors.
+6. Select the best value of \(k\).
+7. Explain why scaling is important for KNN.
+Exercise 7: Decision Tree Classification
+1. Train a DecisionTreeClassifier.
+2. Test different values of max_depth.
+3. Evaluate the model using classification metrics.
+4. Display the confusion matrix.
+5. Visualize the decision tree.
+6. Compare its performance with Logistic Regression.
+Exercise 8: Random Forest Classification
+1. Train a RandomForestClassifier.
+2. Experiment with n_estimators and max_depth.
+3. Evaluate its performance.
+4. Display feature importance.
+5. Compare it with the Decision Tree classifier.
+6. Explain how Random Forest reduces the limitations of a single decision tree.
+Exercise 9: Gradient Boosting
+1. Train a GradientBoostingClassifier.
+2. Experiment with n_estimators, learning_rate, and max_depth.
+3. Evaluate the model.
+4. Compare its performance with Random Forest.
+5. Explain the difference between bagging and boosting.
+Exercise 10: Gaussian Naive Bayes
+1. Train a GaussianNB classifier.
+2. Evaluate the model.
+3. Calculate precision, recall, and F1-score.
+4. Compare the results with Logistic Regression.
+5. Explain the conditional independence assumption.
+Exercise 11: Support Vector Machine (SVM)
+1. Train an SVC classifier.
+2. Compare linear and RBF kernels.
+3. Experiment with C and gamma.
+4. Evaluate the model.
+5. Explain the role of the decision boundary and support vectors.
+6. Compare SVM with KNN and Logistic Regression.
+Exercise 12: Customer Segmentation with K-Means
+Objective: Group customers without using predefined labels.
+1. Select tenure and MonthlyCharges as segmentation features.
+2. Standardize the selected features.
+3. Train a KMeans model.
+4. Test several values of \(k\).
+5. Use the elbow method to select a suitable number of clusters.
+6. Calculate the silhouette score.
+7. Visualize the resulting clusters.
+8. Interpret the characteristics of each cluster.
+9. Explain the difference between supervised and unsupervised learning.
+Exercise 13: Hierarchical Clustering
+1. Apply AgglomerativeClustering.
+2. Experiment with different numbers of clusters.
+3. Generate a dendrogram using an appropriate hierarchical clustering workflow.
+4. Compare the clusters with K-Means.
+5. Explain the difference between hierarchical clustering and K-Means.
+Part 4 — Model Optimization and Evaluation
+1. Create a preprocessing pipeline using Pipeline.
+2. Use ColumnTransformer for numerical and categorical features.
+3. Apply cross-validation with cross_val_score.
+4. Optimize hyperparameters using GridSearchCV.
+5. Try RandomizedSearchCV.
+6. Compare the best classification models using consistent evaluation metrics.
+7. Explain the difference between parameters and hyperparameters.
+8. Explain overfitting and underfitting.
+9. Explain data leakage and how to prevent it.
+10. Analyze class imbalance and evaluate whether class weighting or resampling is appropriate.
+11. Select the final churn prediction model based on the business objective.
+12. Save the selected model using joblib.
+13. Load the saved model and predict churn for new customers.
+Part 5 — Deep Learning with TensorFlow/Keras
+Exercise 14: Artificial Neural Network (ANN / MLP)
+Objective: Predict customer churn using a neural network.
+1. Prepare the input features and target variable.
+2. Convert the data into the appropriate numerical format.
+3. Build a model using Sequential.
+4. Add Dense layers.
+5. Choose suitable activation functions, including ReLU and sigmoid.
+6. Compile the model using compile().
+7. Select an appropriate loss function, optimizer, and evaluation metrics.
+8. Train the model using fit().
+9. Evaluate it using evaluate().
+10. Generate predictions using predict().
+11. Plot training and validation loss.
+12. Plot training and validation accuracy.
+13. Apply Dropout to help reduce overfitting.
+14. Apply EarlyStopping.
+15. Compare the ANN with the best classical classification model.
+Part 6 — Advanced Model Comparison
+1. Compare Logistic Regression, Random Forest, Gradient Boosting, and ANN for churn prediction.
+2. Compare Linear Regression, Random Forest Regression, and a neural network for predicting TotalCharges.
+3. Compare model performance, training time, inference time, and complexity.
+4. Explain why a more complex model does not always perform better.
+5. Identify the most suitable model for each business task.
+6. Document the strengths and limitations of each selected model.
+Part 7 — Deployment and Final Application
+Objective: Create a usable application with Streamlit.
+1. Organize the code into separate modules.
+2. Save the trained models and preprocessing pipelines.
+3. Create a dashboard showing customer statistics.
+4. Add a form to predict customer churn using features such as tenure, Contract, InternetService, and MonthlyCharges.
+5. Add a form to estimate TotalCharges.
+6. Add a customer segmentation page.
+7. Display model evaluation metrics and visualizations.
+8. Validate user inputs and handle errors.
+9. Load saved models instead of retraining them every time.
+10. Create a requirements.txt file.
+11. Write a README explaining installation and execution.
+12. Test the complete application using new customer inputs.
+13. Document known limitations and possible improvements.
