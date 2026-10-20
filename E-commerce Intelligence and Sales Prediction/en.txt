@@ -1,0 +1,102 @@
+Part 1 — Data Cleaning & Exploratory Data Analysis
+1. Load and inspect the dataset.
+2. Identify missing values, duplicates, and invalid transactions.
+3. Detect cancelled orders and returned products.
+4. Convert invoice dates into datetime format.
+5. Calculate revenue using Quantity × Price.
+6. Analyze daily, weekly, and monthly sales.
+7. Identify the top 20 products by revenue.
+8. Identify countries with the highest revenue.
+9. Analyze seasonal sales patterns.
+10. Detect extreme transactions and investigate their business meaning.
+Part 2 — Feature Engineering
+1. Extract year, month, day, and weekday from invoice dates.
+2. Create revenue, average order value, and order frequency features.
+3. Calculate customer purchase frequency.
+4. Build an RFM table:
+   - Recency
+   - Frequency
+   - Monetary
+5. Create product-level and customer-level datasets.
+6. Compare different aggregation strategies.
+7. Prevent future information from leaking into training features.
+Part 3 — Customer Segmentation (Unsupervised Learning)
+1. Apply StandardScaler to the RFM features.
+2. Use the Elbow Method to choose a number of clusters.
+3. Apply KMeans.
+4. Compare cluster quality using the Silhouette Score.
+5. Visualize customer groups using PCA.
+6. Interpret each cluster as a business segment.
+7. Compare KMeans with Agglomerative Clustering.
+8. Recommend a marketing strategy for each segment.
+Part 4 — Sales Prediction (Regression)
+Predict daily or weekly revenue.
+
+Models to train:
+- Linear Regression
+- Polynomial Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Gradient Boosting Regressor
+Tasks:
+1. Aggregate transactions by date.
+2. Create lag features such as previous-day and previous-week sales.
+3. Create rolling averages.
+4. Split the data chronologically instead of randomly.
+5. Evaluate with MAE, RMSE, and \(R^2\).
+6. Compare actual versus predicted revenue.
+7. Analyze errors during peak sales periods.
+8. Predict revenue for future dates using only information available at prediction time.
+Part 5 — Product Demand Forecasting
+1. Select the most frequently purchased products.
+2. Build a time series for each selected product.
+3. Compare a naive baseline with machine learning models.
+4. Predict demand for the next 7 and 30 days.
+5. Evaluate forecasts using MAE and an appropriate percentage-based metric.
+6. Identify products with increasing or decreasing demand.
+7. Estimate stock requirements from predicted demand.
+8. Explain the limitations of forecasting intermittent sales.
+Part 6 — Market Basket Analysis
+Discover which products are purchased together.
+1. Transform invoices into transaction baskets.
+2. Apply the Apriori algorithm.
+3. Generate frequent itemsets.
+4. Calculate support, confidence, and lift.
+5. Identify meaningful product associations.
+6. Build a simple product recommendation strategy.
+7. Compare association rules across customer segments.
+Part 7 — Customer Purchase Prediction
+Create a separate classification problem: predict whether a customer will purchase again during a defined future period.
+1. Define the target using future transactions.
+2. Build features using only past transactions.
+3. Compare Logistic Regression, Random Forest, and Gradient Boosting.
+4. Use stratified validation where appropriate.
+5. Evaluate Precision, Recall, F1-score, and ROC-AUC.
+6. Tune the classification threshold.
+7. Explain the most important predictive features.
+Part 8 — Business Intelligence Dashboard
+
+
+
+
+
+
+
+mokkup.ai
+
+
+Build a Streamlit application with five pages:
+- Overview: revenue, orders, average basket value.
+- Customers: RFM segments and customer profiles.
+- Forecasting: predicted versus actual sales.
+- Products: demand forecasting and product associations.
+- Prediction: customer purchase probability and downloadable results.
+Part 9 — Production & Testing
+1. Organize the code into reusable Python modules.
+2. Save fitted models and preprocessing pipelines.
+3. Create automated tests for feature engineering.
+4. Validate uploaded CSV files.
+5. Handle missing or unseen values.
+6. Compare model versions.
+7. Monitor prediction errors when new actual sales become available.
+8. Document the complete project in a README.
